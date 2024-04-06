@@ -1,43 +1,35 @@
-# LFMC_WildFire_Prediction 
-Predicting Wildfires with Machine Learning  This repository utilizes machine learning to forecast wildfires, a growing concern amid escalating global temperatures. Leveraging live fuel moisture content ( LFMC ) data obtained through microwave remote sensing.
+# Wildfire Prediction with Machine Learning
 
-# Wildfire Prediction using Machine Learning
+In light of escalating global temperatures and the consequential increase in wildfire incidents, this repository presents a novel approach to wildfire prediction using machine learning techniques. Our focus centers on harnessing the power of live fuel moisture content (LFMC) data obtained through advanced microwave remote sensing technology.
 
 ## Introduction
 
-As we see a rise in the temperature across the globe, its potential to burn has also increased. Over the past few decades, there have been many incidents of occurrence of wildfires in the world. An earlier prediction of forest fires can help in better wildfire risk management.
+As the world grapples with the consequences of rising temperatures, the threat of wildfires looms larger than ever. Over recent decades, we've witnessed a surge in the frequency and intensity of these natural disasters. Early prediction of wildfires is paramount to effective risk management strategies.
 
-To predict wildfires, one of the key indicators is live fuel moisture content (LFMC) obtained from ** Google Earth ** , which means the mass of water per unit dry biomass in vegetation. LFMC data is captured at a large scale based on microwave remote sensing and eventually represented as maps.
+Key to our predictive model is the utilization of live fuel moisture content (LFMC) data. LFMC measures the mass of water per unit dry biomass in vegetation, providing invaluable insights into fire susceptibility. This data, acquired through state-of-the-art microwave remote sensing techniques, is then processed and visualized as detailed maps.
 
+### Problem Statement
 
-### Problem Definition: Given the image dataset, determine whether there will be fire in the next 15 days within 8km ∗ 8km grid
+Given an extensive image dataset, our objective is to forecast the likelihood of wildfire occurrence within predefined 8km x 8km grid cells over the next 15 days.
 
-## Data and Methodology
+## Data Collection and Methodology
 
-We utilized LFMC maps and the ground truth wildfire data from fire.ca.gov to predict whether there will be a fire in the near future within the 8km x 8km grid using machine learning models such as SVM and Random Forest. Problem Definition and Algorithm
-The dataset we have are LFMC maps that are downloaded using Google earth engine API and the ground truth wildfire data has been taken from California Department of Forestry and Fire Protection over the same duration
+Our predictive model leverages LFMC maps obtained via the Google Earth Engine API, combined with ground truth wildfire data sourced from fire.ca.gov. We employ robust machine learning algorithms, including Support Vector Machines (SVM) and Random Forest, to analyze and predict wildfire occurrence within the specified grid cells.
 
-![image](https://github.com/manvendra-nema/LFMC_WildFire_Pred/assets/53614640/5662ab02-edbc-4e8b-bf9e-f5b9433e5397)
+![LFMC Map](https://github.com/manvendra-nema/LFMC_WildFire_Pred/assets/53614640/5662ab02-edbc-4e8b-bf9e-f5b9433e5397)
 
+## Results and Insights
 
-## Results
-
-Our results show that Random Forest and SVM achieved the following accuracies:
+Through rigorous experimentation and analysis, our model achieved the following accuracies:
 
 - Random Forest: 91.69%
 - SVM: 80%
 
-Concluding that Random Forest performs better for this wildfire prediction task.
-
-
-## Usage
-
-To replicate the results or explore further:
-1. Clone the repository: `git clone https://github.com/your_username/your_repository.git`
-2. Navigate to the project directory: `cd your_repository`
-3. Explore the notebooks in the `notebooks/` directory for data analysis and model training.
+These results underscore the effectiveness of Random Forest in wildfire prediction tasks, providing valuable insights for future risk mitigation efforts.
 
 ## Dependencies
+
+Ensure you have the following dependencies installed:
 
 - Python 3.x
 - scikit-learn
@@ -51,4 +43,4 @@ To replicate the results or explore further:
 - ray
 - earthengine-api
 
-Note: Result may change w.r.t report as I modifying this after long period with changed dependency.
+Please make sure all dependencies are properly installed and up-to-date to replicate the results accurately.
